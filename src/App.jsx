@@ -1,7 +1,14 @@
-import React from "react";
+import { useState } from "react";
+import NoteList from "./components/NoteList/NoteList";
+import "./App.css";
 
 function App() {
-  return <div>App</div>;
+  const [notes, setNotes] = useState([]);
+  return (
+    <div className="container">
+      <NoteList />
+    </div>
+  );
 }
 
 export default App;
