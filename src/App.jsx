@@ -1,14 +1,13 @@
-import { useContext, useState } from "react";
 import NoteList from "./components/NoteList/NoteList";
-import { NoteContext } from "./context/NoteContext";
+import useNoteContext from "./hooks/useNoteContext";
 import "./App.css";
 
 function App() {
-  const [notes, setNotes] = useContext(NoteContext);
-  console.log(notes);
+  const [notes, setNotes] = useNoteContext();
+  // console.log(notes);
   return (
     <div className="container">
-      <NoteList notes={notes} />
+      <NoteList />
     </div>
   );
 }
