@@ -1,13 +1,12 @@
 import Note from "../Note/Note";
 import "./NoteList.css";
 
-function NoteList() {
+function NoteList({ notes }) {
   return (
     <div className="note_container">
-      <Note />
-      <Note />
-      <Note />
-      <Note />
+      {notes.map((note) => (
+        <Note id={note.id} text={note.text} date={note.date} />
+      ))}
     </div>
   );
 }
