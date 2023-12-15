@@ -1,0 +1,26 @@
+.addnote_container{
+    background-color: cadetblue;
+    border-radius: 10px;
+}
+
+textarea{
+    border: none;
+    resize: none;
+    background-color: cadetblue;
+    color: black;
+    font-size: 1rem;
+    border-radius: 10px;
+    width: 90%;
+    padding: 10px
+    }
+    
+textarea:focus{
+    outline: none;
+}
+
+.addnote_footer{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-left: 10px;
+}
