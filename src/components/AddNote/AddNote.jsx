@@ -1,6 +1,5 @@
 import { useState } from "react";
 import useNoteContext from "../../hooks/useNoteContext";
-import { nanoid } from "nanoid";
 import "./AddNote.css";
 
 function AddNote() {

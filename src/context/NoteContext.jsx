@@ -26,6 +26,7 @@ const NoteProvider = ({ children }) => {
       date: "16/12/2023",
     },
   ]);
+  const [searchText, setSearchText] = useState();
   const addNote = (text) => {
     const date = new Date();
     const newNote = {
@@ -38,7 +39,9 @@ const NoteProvider = ({ children }) => {
   };
   return (
     <>
-      <NoteContext.Provider value={{ notes, setNotes, addNote }}>
+      <NoteContext.Provider
+        value={{ notes, setNotes, addNote, searchText, setSearchText }}
+      >
         {children}
       </NoteContext.Provider>
     </>
